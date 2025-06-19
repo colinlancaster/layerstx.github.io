@@ -604,6 +604,11 @@ section.img-gallery div.gallery-button-container {
 	margin: 10px 0;
 }
 
+.directions a {
+	color: var(--black);
+	text-decoration: underline;
+}
+
 .about-container img {
 	margin: 0 auto;
 	border-radius: var(--primary-border-radius);
