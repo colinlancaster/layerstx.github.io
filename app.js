@@ -93,7 +93,10 @@ const links = document.querySelectorAll('.nav-list a');
 links.forEach(link => {
     link.addEventListener('click', (e) => {
         e.preventDefault();
-        const icon = document.querySelector('.nav-toggle i.fa-solid fa-x');
+        const icon = document.querySelector('i.fa-solid.fa-x');
+        
+        if (icon == null) return;
+
         icon.click();
     });
 });
