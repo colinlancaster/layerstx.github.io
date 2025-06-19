@@ -87,3 +87,13 @@ class Spinner {
 }
 
 Spinner.Go();
+
+const links = document.querySelectorAll('.nav-list a');
+
+links.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const icon = document.querySelector('.nav-toggle i.fa-solid fa-x');
+        icon.click();
+    });
+});
