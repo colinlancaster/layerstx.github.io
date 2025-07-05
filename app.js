@@ -88,6 +88,8 @@ class Spinner {
 
 Spinner.Go();
 
+
+// Account for closing the navigation menu when a link is clicked
 const links = document.querySelectorAll('.nav-list a');
 
 links.forEach(link => {
